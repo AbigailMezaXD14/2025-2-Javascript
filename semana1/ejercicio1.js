@@ -1,14 +1,22 @@
-// Clase 1: ¿Qué es programar? + Variables y Tipos de Datos
+const { ask } = require('../helpers/input.js');
 
-const { ask } = require('../helpers/input');
+async function main () {
+    const name = await ask ('¿Cuál es tu nombre?');
+    const age = Number(await ask ('¿Cuál es tu edad?'));
+    const food = await ask ('¿Cuál es tu comida favorita?');
 
-async function main() {
-  const name = await ask("¿Cómo te llamas? ");
-  const age = Number(await ask("¿Cuántos años tienes? "));
-  // TODO : Agregar pregunta para comida favorita
+    console.log( `Hola ${name}, tienes ${age} años y te gusta ${food}`);
 
-  console.log("Hola " + name + ", tienes " + age + " años.");
-  //console.log(`Tu comida favorita es ${comida}.`);
+
+
 }
 
-main();
+main ();
+
+switch (temperatura) {
+    case 1: console.log ("Hace frío");
+    break;
+
+    case 2: console.log ("Está templado");
+    break;
+}
