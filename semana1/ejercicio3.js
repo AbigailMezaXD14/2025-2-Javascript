@@ -15,6 +15,24 @@ async function main() {
     }    
 
     //TODO: Hacer switch con las condicionales que se hicieron en el if anidado
+
+    switch (true) {
+        case number %3 === 0 && number %5 === 0:
+            console.log("Múltiplo de 3 y 5");
+            break;
+        
+        case number %3 === 0:
+            console.log("Es múltiplo de 3");
+            break;
+
+        case number %5 === 0:
+            console.log("Es múltiplo de 5");
+            break;
+
+        default: 
+        console.log("No es múltiplo de 3 y 5");
+        break;
+    }
    
     const dia =Number(await ask ("Ingresa un número del 1 al 7: "));
     const diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves","Viernes","Sábado","Domingo"]
