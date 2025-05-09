@@ -12,10 +12,3 @@ async function main () {
 
 main ();
 
-switch (temperatura) {
-    case 1: console.log ("Hace frío");
-    break;
-
-    case 2: console.log ("Está templado");
-    break;
-}
