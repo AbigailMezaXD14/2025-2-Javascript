@@ -7,6 +7,8 @@ async function main () {
 
     console.log( `Hola ${name}, tienes ${age} años y te gusta ${food}`);
 
+    
+
 
 }
 
