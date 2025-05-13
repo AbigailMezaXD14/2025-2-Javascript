@@ -10,9 +10,20 @@ const { ask } = require('../helpers/input');
 function diffDays(actualDate, birthDate) {
   const diff = actualDate - birthDate;
   const edadEnDias = Math.floor(diff / (1000 * 60 * 60 * 24));
+  
 
   return edadEnDias;
+  
 }
+
+function diffMonths (actualDate, birthDate) {
+  const diffMes = actualDate - birthDate;
+  const edadEnMeses = Math.floor(diffMes / (1000 * 60 * 60 * 24 * 30));
+  
+  return edadEnMeses;
+}
+
+
 
 async function main() {
   const actualDate = new Date();
@@ -25,6 +36,12 @@ async function main() {
 
   console.log("Haz vivido aproximadamente: ");
   console.log(`${diffDays(actualDate, birthDate)} días`);
+
+  console.log("Haz vivido aproximadamente: ");
+  console.log(`${diffMonths(actualDate, birthDate)} meses`);
+
+
+  
 
 }
 
